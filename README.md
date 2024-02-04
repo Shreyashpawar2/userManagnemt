@@ -1,27 +1,42 @@
-# UserManagnemt
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+User Management System
+Introduction
+This project is a User Management System implemented in Angular, featuring a user module with user creation, listing, and editing functionalities. The application also incorporates validation, data passing between components, and basic styling.
 
-## Development server
+Setup Instructions 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clone the repository:
+https://github.com/Shreyashpawar2/userManagnemt.git 
 
-## Code scaffolding
+Navigate to the project directory:
+cd userManagnemt
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install dependencies:
+npm install
 
-## Build
+Run the application:
+ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. User Module
+1.1 User-Upsert Component
+The User-Upsert component allows users to add or edit user information through a reactive form. Validation rules ensure data integrity.
 
-## Running unit tests
+1.1.1 Form Fields
+FirstName (Required)
+LastName (Required)
+Address (Required)
+Email (Required, Email Validation)
+Phone (Required, 10-digit number)
+1.1.2 User-List Component
+The User-List component displays a grid of users, including their name, email, phone, and actions (Edit and Delete).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.2 Validation
+A check for existing users is implemented, and an "already exists" message is displayed if a duplicate is detected.
 
-## Running end-to-end tests
+1.3 Data Passing
+The DataService is used to pass selected user information between the User-List and User-Upsert components. It also triggers a refresh of the user list after additions or updates.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1.4 Styling
+The application utilizes Angular Material for basic styling, providing a visually appealing user interface.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
