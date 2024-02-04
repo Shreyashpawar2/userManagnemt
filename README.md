@@ -39,4 +39,5 @@ The DataService is used to pass selected user information between the User-List 
 1.4 Styling
 The application utilizes Angular Material for basic styling, providing a visually appealing user interface.
 
+![Alt Text](Screenshot from 2024-02-04 22-53-44](https://github.com/Shreyashpawar2/userManagnemt/assets/97426822/6aab1fc9-307f-48cd-8869-27ec8ecbf119)
 
