@@ -1,0 +1,72 @@
+/* user-upsert.component.css */
+
+.user-upsert-container {
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  div.error-message {
+    color: #d9534f;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .clear-button {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+    #gap button {
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+    }
+    div#gap {
+        display: flex;
+        justify-content: space-around;
+    }
